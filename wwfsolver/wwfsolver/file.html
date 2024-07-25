@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASSIC WORDS SOLVER</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <h1>CLASSIC WORDS SOLVER</h1>
+    <!-- creating each cell of the board with labels: numbers across, letter down -->
+    <div class="grid">
+        <input type="text" class="gridItem" maxlength="1" id="a1">
+        <input type="text" class="gridItem" maxlength="1" id="a2">
+        <input type="text" class="gridItem" maxlength="1" id="a3">
+        <input type="text" class="gridItem tw" maxlength="1" id="a4">
+        <input type="text" class="gridItem" maxlength="1" id="a5">
+        <input type="text" class="gridItem" maxlength="1" id="a6">
+        <input type="text" class="gridItem tl" maxlength="1" id="a7">
+        <input type="text" class="gridItem" maxlength="1" id="a8">
+        <input type="text" class="gridItem tl" maxlength="1" id="a9">
+        <input type="text" class="gridItem" maxlength="1" id="a10">
+        <input type="text" class="gridItem" maxlength="1" id="a11">
+        <input type="text" class="gridItem tw" maxlength="1" id="a12">
+        <input type="text" class="gridItem" maxlength="1" id="a13">
+        <input type="text" class="gridItem" maxlength="1" id="a14">
+        <input type="text" class="gridItem" maxlength="1" id="a15">
+        <input type="text" class="gridItem" maxlength="1" id="b1">
+        <input type="text" class="gridItem" maxlength="1" id="b2">
+        <input type="text" class="gridItem dl" maxlength="1" id="b3">
+        <input type="text" class="gridItem" maxlength="1" id="b4">
+        <input type="text" class="gridItem" maxlength="1" id="b5">
+        <input type="text" class="gridItem dw" maxlength="1" id="b6">
+        <input type="text" class="gridItem" maxlength="1" id="b7">
+        <input type="text" class="gridItem" maxlength="1" id="b8">
+        <input type="text" class="gridItem" maxlength="1" id="b9">
+        <input type="text" class="gridItem dw" maxlength="1" id="b10">
+        <input type="text" class="gridItem" maxlength="1" id="b11">
+        <input type="text" class="gridItem" maxlength="1" id="b12">
+        <input type="text" class="gridItem dl" maxlength="1" id="b13">
+        <input type="text" class="gridItem" maxlength="1" id="b14">
+        <input type="text" class="gridItem" maxlength="1" id="b15">
+        <input type="text" class="gridItem" maxlength="1" id="c1">
+        <input type="text" class="gridItem dl" maxlength="1" id="c2">
+        <input type="text" class="gridItem" maxlength="1" id="c3">
+        <input type="text" class="gridItem" maxlength="1" id="c4">
+        <input type="text" class="gridItem dl" maxlength="1" id="c5">
+        <input type="text" class="gridItem" maxlength="1" id="c6">
+        <input type="text" class="gridItem" maxlength="1" id="c7">
+        <input type="text" class="gridItem" maxlength="1" id="c8">
+        <input type="text" class="gridItem" maxlength="1" id="c9">
+        <input type="text" class="gridItem" maxlength="1" id="c10">
+        <input type="text" class="gridItem dl" maxlength="1" id="c11">
+        <input type="text" class="gridItem" maxlength="1" id="c12">
+        <input type="text" class="gridItem" maxlength="1" id="c13">
+        <input type="text" class="gridItem dl" maxlength="1" id="c14">
+        <input type="text" class="gridItem" maxlength="1" id="c15">
+        <input type="text" class="gridItem tw" maxlength="1" id="d1">
+        <input type="text" class="gridItem" maxlength="1" id="d2">
+        <input type="text" class="gridItem" maxlength="1" id="d3">
+        <input type="text" class="gridItem tl" maxlength="1" id="d4">
+        <input type="text" class="gridItem" maxlength="1" id="d5">
+        <input type="text" class="gridItem" maxlength="1" id="d6">
+        <input type="text" class="gridItem" maxlength="1" id="d7">
+        <input type="text" class="gridItem dw" maxlength="1" id="d8">
+        <input type="text" class="gridItem" maxlength="1" id="d9">
+        <input type="text" class="gridItem" maxlength="1" id="d10">
+        <input type="text" class="gridItem" maxlength="1" id="d11">
+        <input type="text" class="gridItem tl" maxlength="1" id="d12">
+        <input type="text" class="gridItem" maxlength="1" id="d13">
+        <input type="text" class="gridItem" maxlength="1" id="d14">
+        <input type="text" class="gridItem tw" maxlength="1" id="d15">
+        <input type="text" class="gridItem" maxlength="1" id="e1">
+        <input type="text" class="gridItem" maxlength="1" id="e2">
+        <input type="text" class="gridItem dl" maxlength="1" id="e3">
+        <input type="text" class="gridItem" maxlength="1" id="e4">
+        <input type="text" class="gridItem" maxlength="1" id="e5">
+        <input type="text" class="gridItem" maxlength="1" id="e6">
+        <input type="text" class="gridItem dl" maxlength="1" id="e7">
+        <input type="text" class="gridItem" maxlength="1" id="e8">
+        <input type="text" class="gridItem dl" maxlength="1" id="e9">
+        <input type="text" class="gridItem" maxlength="1" id="e10">
+        <input type="text" class="gridItem" maxlength="1" id="e11">
+        <input type="text" class="gridItem" maxlength="1" id="e12">
+        <input type="text" class="gridItem dl" maxlength="1" id="e13">
+        <input type="text" class="gridItem" maxlength="1" id="e14">
+        <input type="text" class="gridItem" maxlength="1" id="e15">
+        <input type="text" class="gridItem" maxlength="1" id="f1">
+        <input type="text" class="gridItem dw" maxlength="1" id="f2">
+        <input type="text" class="gridItem" maxlength="1" id="f3">
+        <input type="text" class="gridItem" maxlength="1" id="f4">
+        <input type="text" class="gridItem" maxlength="1" id="f5">
+        <input type="text" class="gridItem tl" maxlength="1" id="f6">
+        <input type="text" class="gridItem" maxlength="1" id="f7">
+        <input type="text" class="gridItem" maxlength="1" id="f8">
+        <input type="text" class="gridItem" maxlength="1" id="f9">
+        <input type="text" class="gridItem tl" maxlength="1" id="f10">
+        <input type="text" class="gridItem" maxlength="1" id="f11">
+        <input type="text" class="gridItem" maxlength="1" id="f12">
+        <input type="text" class="gridItem" maxlength="1" id="f13">
+        <input type="text" class="gridItem dw" maxlength="1" id="f14">
+        <input type="text" class="gridItem" maxlength="1" id="f15">
+        <input type="text" class="gridItem tl" maxlength="1" id="g1">
+        <input type="text" class="gridItem" maxlength="1" id="g2">
+        <input type="text" class="gridItem" maxlength="1" id="g3">
+        <input type="text" class="gridItem" maxlength="1" id="g4">
+        <input type="text" class="gridItem dl" maxlength="1" id="g5">
+        <input type="text" class="gridItem" maxlength="1" id="g6">
+        <input type="text" class="gridItem" maxlength="1" id="g7">
+        <input type="text" class="gridItem" maxlength="1" id="g8">
+        <input type="text" class="gridItem" maxlength="1" id="g9">
+        <input type="text" class="gridItem" maxlength="1" id="g10">
+        <input type="text" class="gridItem dl" maxlength="1" id="g11">
+        <input type="text" class="gridItem" maxlength="1" id="g12">
+        <input type="text" class="gridItem" maxlength="1" id="g13">
+        <input type="text" class="gridItem" maxlength="1" id="g14">
+        <input type="text" class="gridItem tl" maxlength="1" id="g15">
+        <input type="text" class="gridItem" maxlength="1" id="h1">
+        <input type="text" class="gridItem" maxlength="1" id="h2">
+        <input type="text" class="gridItem" maxlength="1" id="h3">
+        <input type="text" class="gridItem dw" maxlength="1" id="h4">
+        <input type="text" class="gridItem" maxlength="1" id="h5">
+        <input type="text" class="gridItem" maxlength="1" id="h6">
+        <input type="text" class="gridItem" maxlength="1" id="h7">
+        <input type="text" class="gridItem startTile" maxlength="1" id="h8">
+        <input type="text" class="gridItem" maxlength="1" id="h9">
+        <input type="text" class="gridItem" maxlength="1" id="h10">
+        <input type="text" class="gridItem" maxlength="1" id="h11">
+        <input type="text" class="gridItem dw" maxlength="1" id="h12">
+        <input type="text" class="gridItem" maxlength="1" id="h13">
+        <input type="text" class="gridItem" maxlength="1" id="h14">
+        <input type="text" class="gridItem" maxlength="1" id="h15">
+        <input type="text" class="gridItem tl" maxlength="1" id="i1">
+        <input type="text" class="gridItem" maxlength="1" id="i2">
+        <input type="text" class="gridItem" maxlength="1" id="i3">
+        <input type="text" class="gridItem" maxlength="1" id="i4">
+        <input type="text" class="gridItem dl" maxlength="1" id="i5">
+        <input type="text" class="gridItem" maxlength="1" id="i6">
+        <input type="text" class="gridItem" maxlength="1" id="i7">
+        <input type="text" class="gridItem" maxlength="1" id="i8">
+        <input type="text" class="gridItem" maxlength="1" id="i9">
+        <input type="text" class="gridItem" maxlength="1" id="i10">
+        <input type="text" class="gridItem dl" maxlength="1" id="i11">
+        <input type="text" class="gridItem" maxlength="1" id="i12">
+        <input type="text" class="gridItem" maxlength="1" id="i13">
+        <input type="text" class="gridItem" maxlength="1" id="i14">
+        <input type="text" class="gridItem tl" maxlength="1" id="i15">
+        <input type="text" class="gridItem" maxlength="1" id="j1">
+        <input type="text" class="gridItem dw" maxlength="1" id="j2">
+        <input type="text" class="gridItem" maxlength="1" id="j3">
+        <input type="text" class="gridItem" maxlength="1" id="j4">
+        <input type="text" class="gridItem" maxlength="1" id="j5">
+        <input type="text" class="gridItem tl" maxlength="1" id="j6">
+        <input type="text" class="gridItem" maxlength="1" id="j7">
+        <input type="text" class="gridItem" maxlength="1" id="j8">
+        <input type="text" class="gridItem" maxlength="1" id="j9">
+        <input type="text" class="gridItem tl" maxlength="1" id="j10">
+        <input type="text" class="gridItem" maxlength="1" id="j11">
+        <input type="text" class="gridItem" maxlength="1" id="j12">
+        <input type="text" class="gridItem" maxlength="1" id="j13">
+        <input type="text" class="gridItem dw" maxlength="1" id="j14">
+        <input type="text" class="gridItem" maxlength="1" id="j15">
+        <input type="text" class="gridItem" maxlength="1" id="k1">
+        <input type="text" class="gridItem" maxlength="1" id="k2">
+        <input type="text" class="gridItem dl" maxlength="1" id="k3">
+        <input type="text" class="gridItem" maxlength="1" id="k4">
+        <input type="text" class="gridItem" maxlength="1" id="k5">
+        <input type="text" class="gridItem" maxlength="1" id="k6">
+        <input type="text" class="gridItem dl" maxlength="1" id="k7">
+        <input type="text" class="gridItem" maxlength="1" id="k8">
+        <input type="text" class="gridItem dl" maxlength="1" id="k9">
+        <input type="text" class="gridItem" maxlength="1" id="k10">
+        <input type="text" class="gridItem" maxlength="1" id="k11">
+        <input type="text" class="gridItem" maxlength="1" id="k12">
+        <input type="text" class="gridItem dl" maxlength="1" id="k13">
+        <input type="text" class="gridItem" maxlength="1" id="k14">
+        <input type="text" class="gridItem" maxlength="1" id="k15">
+        <input type="text" class="gridItem tw" maxlength="1" id="l1">
+        <input type="text" class="gridItem" maxlength="1" id="l2">
+        <input type="text" class="gridItem" maxlength="1" id="l3">
+        <input type="text" class="gridItem tl" maxlength="1" id="l4">
+        <input type="text" class="gridItem" maxlength="1" id="l5">
+        <input type="text" class="gridItem" maxlength="1" id="l6">
+        <input type="text" class="gridItem" maxlength="1" id="l7">
+        <input type="text" class="gridItem dw" maxlength="1" id="l8">
+        <input type="text" class="gridItem" maxlength="1" id="l9">
+        <input type="text" class="gridItem" maxlength="1" id="l10">
+        <input type="text" class="gridItem" maxlength="1" id="l11">
+        <input type="text" class="gridItem tl" maxlength="1" id="l12">
+        <input type="text" class="gridItem" maxlength="1" id="l13">
+        <input type="text" class="gridItem" maxlength="1" id="l14">
+        <input type="text" class="gridItem tw" maxlength="1" id="l15">
+        <input type="text" class="gridItem" maxlength="1" id="m1">
+        <input type="text" class="gridItem dl" maxlength="1" id="m2">
+        <input type="text" class="gridItem" maxlength="1" id="m3">
+        <input type="text" class="gridItem" maxlength="1" id="m4">
+        <input type="text" class="gridItem dl" maxlength="1" id="m5">
+        <input type="text" class="gridItem" maxlength="1" id="m6">
+        <input type="text" class="gridItem" maxlength="1" id="m7">
+        <input type="text" class="gridItem" maxlength="1" id="m8">
+        <input type="text" class="gridItem" maxlength="1" id="m9">
+        <input type="text" class="gridItem" maxlength="1" id="m10">
+        <input type="text" class="gridItem dl" maxlength="1" id="m11">
+        <input type="text" class="gridItem" maxlength="1" id="m12">
+        <input type="text" class="gridItem" maxlength="1" id="m13">
+        <input type="text" class="gridItem dl" maxlength="1" id="m14">
+        <input type="text" class="gridItem" maxlength="1" id="m15">
+        <input type="text" class="gridItem" maxlength="1" id="n1">
+        <input type="text" class="gridItem" maxlength="1" id="n2">
+        <input type="text" class="gridItem dl" maxlength="1" id="n3">
+        <input type="text" class="gridItem" maxlength="1" id="n4">
+        <input type="text" class="gridItem" maxlength="1" id="n5">
+        <input type="text" class="gridItem dw" maxlength="1" id="n6">
+        <input type="text" class="gridItem" maxlength="1" id="n7">
+        <input type="text" class="gridItem" maxlength="1" id="n8">
+        <input type="text" class="gridItem" maxlength="1" id="n9">
+        <input type="text" class="gridItem dw" maxlength="1" id="n10">
+        <input type="text" class="gridItem" maxlength="1" id="n11">
+        <input type="text" class="gridItem" maxlength="1" id="n12">
+        <input type="text" class="gridItem dl" maxlength="1" id="n13">
+        <input type="text" class="gridItem" maxlength="1" id="n14">
+        <input type="text" class="gridItem" maxlength="1" id="n15">
+        <input type="text" class="gridItem" maxlength="1" id="o1">
+        <input type="text" class="gridItem" maxlength="1" id="o2">
+        <input type="text" class="gridItem" maxlength="1" id="o3">
+        <input type="text" class="gridItem tw" maxlength="1" id="o4">
+        <input type="text" class="gridItem" maxlength="1" id="o5">
+        <input type="text" class="gridItem" maxlength="1" id="o6">
+        <input type="text" class="gridItem tl" maxlength="1" id="o7">
+        <input type="text" class="gridItem" maxlength="1" id="o8">
+        <input type="text" class="gridItem tl" maxlength="1" id="o9">
+        <input type="text" class="gridItem" maxlength="1" id="o10">
+        <input type="text" class="gridItem" maxlength="1" id="o11">
+        <input type="text" class="gridItem tw" maxlength="1" id="o12">
+        <input type="text" class="gridItem" maxlength="1" id="o13">
+        <input type="text" class="gridItem" maxlength="1" id="o14">
+        <input type="text" class="gridItem" maxlength="1" id="o15">
+
+    </div>
+</body>
+</html>

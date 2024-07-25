@@ -1,0 +1,64 @@
+html {
+    background-color: rgba(41,122,204,255);
+}
+h1 {
+    /* title */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(71,32,19,255);
+    background-color: rgba(249,157,61,255);
+    border-radius: 15px;
+    /* border-style: outset; */
+    border-width: 4px;
+}
+.gridItem{
+    /* customize each cell */
+    width: 90%;
+    aspect-ratio: 1/1;
+    background-color: rgba(239,237,234,255);
+    /* border-spacing: 0; */
+    justify-content: center;
+    border-radius: 6px;
+    border-style: unset;
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-transform: capitalize;
+    
+}
+/* highlight selected cells */
+.gridItem:hover{
+    background-color: rgba(180, 180, 180, 0.519);
+}
+
+.grid {
+    /* customize the grid */
+    
+    justify-content: center;
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    gap: 3px;
+    padding: 3px;
+    justify-items: center;
+    border-radius: 6px;
+}
+/* style the special tiles */
+.tw {
+    background-color: rgba(255,154,93,255);
+}
+.dw {
+    background-color:rgba(242,111,96,255);
+}
+.dl {
+    background-color: rgba(74,167,221,255);
+}
+.tl {
+    background-color: rgba(167,196,102,255);
+}
+.startTile {
+    background-color: rgba(191,105,171,255);
+    
+}
